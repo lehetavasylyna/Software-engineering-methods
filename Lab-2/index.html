@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Моделювання траєкторії руху (D3)</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Моделювання кінематики руху (D3)</h2>
+
+      <div class="form-container">
+        <table>
+          <tr>
+            <td>x0:</td>
+            <td><input type="number" id="x0" value="0" /></td>
+            <td>y0:</td>
+            <td><input type="number" id="y0" value="0" /></td>
+          </tr>
+          <tr>
+            <td>Кут (°):</td>
+            <td><input type="number" id="angle" value="30" /></td>
+            <td>Швидкість:</td>
+            <td><input type="number" id="velocity" value="5" /></td>
+          </tr>
+          <tr>
+            <td>Прискорення:</td>
+            <td><input type="number" id="acceleration" value="0" /></td>
+            <td>Колір:</td>
+            <td><input type="color" id="color" value="#ff0000" /></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="buttons">
+        <button id="draw">Графік</button>
+        <button id="clear">Очистити</button>
+      </div>
+
+      <div id="chart-container">
+        <svg id="chart" width="600" height="400"></svg>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
